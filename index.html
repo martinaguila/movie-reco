@@ -14,22 +14,14 @@
         <div class="modal-content">
             <span class="close" id="closeModal">&times;</span>
             <h2>Recommended Movie</h2>
-            <p>Title: </p>
-            <p>Genre: </p>
-            <p>Released Date: </p>
-            <p>Director: </p>
-            <p>Actor: </p>
-            <p>Popularity: </p>
-            <p>Duration(mins): </p>
-            <p>Review Scores: </p>
-            <p>Language: </p>
-            <p>Awards: </p>
-            <p>Rated System: </p>
+            <div class="movie-list-container">
+                <!-- This is where the list of movies will be displayed -->
+            </div>
         </div>
     </div>
 
     <div class="container">
-        <h1>Movie Recommendation</h1>
+        <h1 style="text-align: center;">Movie Recommendation</h1>
         <div class="row">
             <div class="col-md-6">
                 <!-- GENRE -->
@@ -44,19 +36,20 @@
                         id="showSelectedGenres">Select Genres
                     </button>
                     
-                    <div id="selectedGenresList lists"></div>
+                    <div id="selectedGenresList" class="lists"></div>
                 </div>
                 <!-- RELEASED DATE -->
                 <div class="p-3">
-                    <label for="datepicker">Select released date:</label>
-                    <input type="date" id="datepicker" name="datepicker" value="2020-01-01">
+                    <label for="releasedYear">Select released year:</label>
+                    <select id="releasedYear" name="releasedYear">
+                    </select>
                 </div>
                 <!-- DIRECTOR -->
-                <div class="p-3">
+                <!-- <div class="p-3">
                     <label for="director">Select director:</label>
                     <select id="director" name="director">
                     </select>
-                </div>
+                </div> -->
                 <!-- ACTOR -->
                 <div class="p-3">
                     <label for="actor">Select actors:</label>
@@ -69,7 +62,7 @@
                         id="showSelectedActors">Select Actors
                     </button>
                     
-                    <div id="selectedActorsList lists"></div>
+                    <div id="selectedActorsList" class="lists"></div>
                 </div>
                 <!-- POPULARITY -->
                 <div class="p-3">
@@ -109,7 +102,7 @@
                         id="showSelectedAwards">Select Awards
                     </button>
                     
-                    <div id="selectedAwardsList lists"></div>
+                    <div id="selectedAwardsList" class="lists"></div>
                 </div>
                 <!-- RATED SYSTEM -->
                 <div class="p-3">
@@ -120,15 +113,11 @@
             </div>
         </div>
 
-        <div class="button-holder">
-            <button 
-                type="button" 
-                class="btn"
-                id="startBtn">
-                START
-            </button>
+        <div class="button-container">
+            <button type="button" class="btn clear" id="clearBtn">CLEAR ALL</button>
+            <button type="button" class="btn start" id="startBtn">START</button>
         </div>
-
+        
     </div>
 
 <footer>

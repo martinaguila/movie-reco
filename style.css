@@ -24,6 +24,7 @@ h1{
     padding: 5px;
     z-index: 100;
     width: 90%;
+    height: 300px;
 }
 
 .dd-icon{
@@ -107,19 +108,34 @@ h1{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
     z-index: 1;
-  }
-
-.button-holder{
-    text-align: center;
 }
 
-button{
+.button-container {
+    margin-top: 25px;
+    text-align: center; /* Center the buttons horizontally */
+}
+
+.button-container button {
+    margin: 5px; /* Add margin to create space between the buttons */
+    /* Add any additional styling for the buttons if needed */
+}
+
+.clear{
     width: 120px;
     margin-top: 50px;
     background: #B7410E !important;
     border: 1px solid #B7410E !important;
     color: white !important;
 }
+
+.start{
+    width: 120px;
+    margin-top: 50px;
+    background: #19b70e !important;
+    border: 1px solid #19b70e !important;
+    color: white !important;
+}
+
 
 /* Modal Styles */
 .modal {
@@ -146,7 +162,7 @@ button{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     position: relative;
     border-radius: 10px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .close {
