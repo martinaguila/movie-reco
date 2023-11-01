@@ -554,9 +554,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const reviewArray = [
         "",
-        "7.0",
-        "8.0",
-        "9.0"
+        7.0,
+        8.0,
+        9.0
     ];
 
     const languageArray = [
@@ -586,19 +586,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const ratedArray = [
         "",
-        "R",
-        "PG-13",
         "G",
-        "PG"
+        "PG-13",
+        "PG",
+        "R"
     ];
 
     const releasedYearArray = [
         "",
+        "1970s",
         "1980s",
         "1990s",
         "2000s",
-        "2010s",
-        "2020s"
+        "2010s"
     ];
 
     // Get a reference to the select element
@@ -652,7 +652,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     reviewArray.forEach(review => {
         const option = document.createElement("option");
-        option.value = review.toLowerCase();
+        option.value = review;
         option.text = review;
         reviewSelect.appendChild(option);
     });
@@ -729,7 +729,7 @@ document.addEventListener("DOMContentLoaded", function() {
     showSelectedButtonActor.addEventListener("click", function() {
         const selectedItems = Array.from(actorSelect.selectedOptions).map(option => option.text);
         const selectedText = selectedItems.join(', ');
-        console.log(selectedText)
+
         selectedActorsList.textContent = selectedText;
     });
 
@@ -807,22 +807,147 @@ document.addEventListener("DOMContentLoaded", function() {
         const selectedGenres = Array.from(genreSelect.selectedOptions).map(option => option.value);
         const selectedActors = Array.from(actorSelect.selectedOptions).map(option => option.value);
         const selectedPopularity = popularitySelect.value;
+        const selectedDecade = yearSelect.value;
+        const selectedDuration = durationSelect.value;
+        const selectedAwards = Array.from(awardSelect.selectedOptions).map(option => option.value);
+        const selectedRated = ratedSelect.value;
+        const selectedScore = parseFloat(reviewSelect.value);
+
         // Add similar logic for other criteria (e.g., duration, review scores, language, awards, rated).
-        console.log(selectedGenres)
+        console.log(selectedAwards)
+
+        // Calculate the range of years for the selected decade
+        let startYear, endYear;
+        switch (selectedDecade) {
+            case "1980s":
+                startYear = 1980;
+                endYear = 1989;
+                break;
+            case "1990s":
+                startYear = 1990;
+                endYear = 1999;
+                break;
+            case "2000s":
+                startYear = 2000;
+                endYear = 2009;
+                break;
+            case "2010s":
+                startYear = 2010;
+                endYear = 2019;
+                break;
+            default:
+                startYear = 1900;
+                endYear = 2099;
+        }
+
+        // Calculate the range of years for the selected decade
+        let startDuration, endDuration;
+        switch (selectedDuration) {
+            case "80":
+                startDuration = 80;
+                endDuration = 89;
+                break;
+            case "90":
+                startDuration = 90;
+                endDuration = 99;
+                break;
+            case "100":
+                startDuration = 100;
+                endDuration = 109;
+                break;
+            case "110":
+                startDuration = 110;
+                endDuration = 119;
+                break;
+            case "120":
+                startDuration = 120;
+                endDuration = 129;
+                break;
+            case "130":
+                startDuration = 130;
+                endDuration = 139;
+                break;
+            case "140":
+                startDuration = 140;
+                endDuration = 149;
+                break;
+            default:
+                startDuration = 70;
+                endDuration = 200;
+        }
+
+        let startScore, endScore;
+        // selectedScore = parseFloat(selectedScore);
+        switch (selectedScore) {
+            case 7:
+                startScore = 7.0;
+                endScore = 7.9;
+                break;
+            case 8:
+                startScore = 8.0;
+                endScore = 8.1;
+                break;
+            case 9:
+                startScore = 9.0;
+                endScore = 9.1;
+                break;
+            default:
+                startScore = 6.0;
+                endScore = 10.0;
+        }
+
         // Filter the movieListArray based on selected criteria
         const filteredMovies = movieListArray.filter(movie => {
-            console.log("movie",movie.genre)
+
+            // GENRE
             const genreMatch = selectedGenres.every(selectedGenre => {
                 // Convert both strings to lowercase and trim any leading/trailing whitespace
                 const movieGenres = movie.genre.map(genre => genre.toLowerCase().trim());
                 return movieGenres.includes(selectedGenre.toLowerCase().trim());
             });
-            const actorsMatch = selectedActors.every(actor => movie.actors.includes(actor));
-            const popularityMatch = selectedPopularity === "All" || movie.popularity === selectedPopularity;
-            console.log(genreMatch)
-            // Add similar logic for other criteria.
 
-            return genreMatch;
+            // ACTOR
+            const actorsMatch = selectedActors.every(selectedActors => {
+                // Convert both strings to lowercase and trim any leading/trailing whitespace
+                const movieActors = movie.actors.map(actors => actors.toLowerCase().trim());
+                return movieActors.includes(selectedActors.toLowerCase().trim());
+            });
+            
+            // YEAR RELEASED
+            const yearMatch = parseInt(movie.date) >= startYear && parseInt(movie.date) <= endYear;
+
+            // Duration
+            const durationMatch = parseInt(movie.duration) >= startDuration && parseInt(movie.duration) <= endDuration;
+
+            // POPULARITY
+            let popularityMatch;
+            if (selectedPopularity === ''){
+                popularityMatch = true
+            }else{
+                popularityMatch = movie.popularity.toLowerCase().trim() === selectedPopularity.toLowerCase().trim()
+            }
+
+            // AWARDS
+            const awardMatch = selectedAwards.every(selectedAward => {
+                // Convert both strings to lowercase and trim any leading/trailing whitespace
+                const movieAwards = movie.awards.map(award => award.toLowerCase().trim());
+                // console.log(movieAwards, selectedAward)
+                return movieAwards.includes(selectedAward.toLowerCase().trim());
+            });
+
+            // RATED
+            let ratedMatch;
+            if (selectedRated === ''){
+                ratedMatch = true
+            }else{
+                ratedMatch = movie.rated.toLowerCase().trim() === selectedRated.toLowerCase().trim()
+            }
+            console.log(parseFloat(movie.scores), startScore, endScore)
+            // RATED SCORE
+            const scoreMatch = parseFloat(movie.scores) >= startScore && parseFloat(movie.scores) <= endScore;
+            console.log(scoreMatch)
+            return genreMatch && yearMatch && durationMatch && actorsMatch && popularityMatch && 
+                awardMatch && ratedMatch && scoreMatch;
         });
         console.log(filteredMovies)
         
@@ -838,14 +963,44 @@ document.addEventListener("DOMContentLoaded", function() {
                 movieDetails.classList.add("movie-details");
         
                 const titleElement = document.createElement("div");
-                titleElement.textContent = "Title: " + movie.title;
+                titleElement.innerHTML = '<span class="bold-text">Title:</span> ' + movie.title;
                 movieDetails.appendChild(titleElement);
         
                 const genreElement = document.createElement("div");
-                genreElement.textContent = "Genre: " + movie.genre.join(", ");
+                genreElement.innerHTML = '<span class="bold-text">Genre:</span> ' + movie.genre.join(", ");
                 movieDetails.appendChild(genreElement);
-        
-                // Add similar lines to display other movie details in the modal.
+
+                const dateElement = document.createElement("div");
+                dateElement.innerHTML = '<span class="bold-text">Year released:</span> ' + movie.date;
+                movieDetails.appendChild(dateElement);
+
+                const actorsElement = document.createElement("div");
+                actorsElement.innerHTML = '<span class="bold-text">Actors:</span> ' + movie.actors.join(", ");
+                movieDetails.appendChild(actorsElement);
+
+                const popularityElement = document.createElement("div");
+                popularityElement.innerHTML = '<span class="bold-text">Popularity:</span> ' + movie.popularity;
+                movieDetails.appendChild(popularityElement);
+
+                const durationElement = document.createElement("div");
+                durationElement.innerHTML = '<span class="bold-text">Duration:</span> ' + movie.duration + ' minutes';
+                movieDetails.appendChild(durationElement);
+
+                const scoresElement = document.createElement("div");
+                scoresElement.innerHTML = '<span class="bold-text">Audience score:</span> ' + movie.scores;
+                movieDetails.appendChild(scoresElement);
+
+                const languageElement = document.createElement("div");
+                languageElement.innerHTML = '<span class="bold-text">Language:</span> ' + movie.language;
+                movieDetails.appendChild(languageElement);
+
+                const awardsElement = document.createElement("div");
+                awardsElement.innerHTML = movie.awards.length > 0 ? '<span class="bold-text">Awards:</span> ' + movie.awards.join(", ") : '<span class="bold-text">Awards:</span> <span class="italic-text">None</span>';
+                movieDetails.appendChild(awardsElement);
+
+                const rateElement = document.createElement("div");
+                rateElement.innerHTML = '<span class="bold-text">Rate:</span> ' + movie.rated;
+                movieDetails.appendChild(rateElement);
         
                 movieListContainer.appendChild(movieDetails);
         

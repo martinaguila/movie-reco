@@ -203,3 +203,10 @@ p {
     background-color: #0056b3;
 }
 
+.bold-text{
+    font-weight: bold;
+}
+
+.italic-text{
+    font-style: italic;
+}
