@@ -1,14 +1,83 @@
-body{
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrollbars */
+}
+
+.title {
+    background-color: #111; /* Much darker grey background for the title */
+    color: #b5b5b5; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    /* flex-wrap: wrap; Allow movies to wrap to the next row */
+    height: 100%;
+    background-color: #333; /* Dark grey background color for the row */
+    font-size: 12px;
+}
+
+.movie {
+    margin: 10px;
+    text-align: center;
+    width: calc(20px - 20px); /* Set width for about 5 movies per row */
+    box-sizing: border-box;
+}
+
+.movie img {
+    max-width: 100px;
+    max-height: 150px;
+    margin-bottom: 10px;
+}
+
+.movie-title {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.movie-info {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.movie-scores {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.column1 {
+    flex: 3; /* 3/12 width */
+    padding: 20px;
+    background-color: #222; /* Darker grey background color for column 1 */
+    border-right: 8px solid #111; /* Dirty white line */
+}
+
+.column2 {
+    flex: 9; /* 9/12 width */
+    padding: 20px;
+    background-color: #333; /* Slightly lighter grey background color for column 2 */
+}
+
+.content {
+    color: #b5b5b5; /* White text color */
+}
+
+
+/* body{
     background-image: url('assets/bg.jpeg'); 
     background-size: cover; 
     background-repeat: no-repeat;
-}
+} */
 
-h1{
+/* h1{
     text-align: center;
     margin: 50px;
     color: white;
-}
+} */
 
 #showSelectedGenres, #showSelectedActors, #showSelectedAwards{
     display: none;
@@ -24,7 +93,7 @@ h1{
     padding: 5px;
     z-index: 100;
     width: 90%;
-    height: 300px;
+    height: 204px;
 }
 
 .dd-icon{
@@ -32,14 +101,14 @@ h1{
     cursor: pointer;
 }
 
-.row{
+/* .row{
     background-image: url('assets/input-bg.jpeg'); 
     background-size: cover; 
     background-repeat: no-repeat;
-}
+} */
 
 .lists, label{
-    color: white;
+    color: #b5b5b5;
 }
 
 /* Add custom styles for selected options */
@@ -117,11 +186,11 @@ h1{
 
 .button-container button {
     margin: 5px; /* Add margin to create space between the buttons */
-    /* Add any additional styling for the buttons if needed */
+    font-size: 10px;
 }
 
 .clear{
-    width: 120px;
+    width: 95px;
     margin-top: 50px;
     background: #B7410E !important;
     border: 1px solid #B7410E !important;
@@ -129,7 +198,7 @@ h1{
 }
 
 .start{
-    width: 120px;
+    width: 95px;
     margin-top: 50px;
     background: #19b70e !important;
     border: 1px solid #19b70e !important;
@@ -173,12 +242,12 @@ h1{
     cursor: pointer;
     color: #555;
 }
-
+/* 
 h2 {
     color: #333;
     font-size: 24px;
     margin-bottom: 20px;
-}
+} */
 
 p {
     color: #555;
@@ -209,4 +278,30 @@ p {
 
 .italic-text{
     font-style: italic;
+}
+.p-3 {
+    padding: 5px !important;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: 200px !important;
+}
+
+.align-left{
+    text-align: left;
+}
+
+.align-right{
+    text-align: right;
+}
+
+.no-bg{
+    background-color: unset;
+}
+
+.col-md-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+    padding: 10px 22px 10px 0 !important;
 }

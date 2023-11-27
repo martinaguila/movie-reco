@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "8.1",
             "language": "English",
             "awards": ["Best Production Design", "Best Editing"],
-            "rated": "R"
+            "rated": "R",
+            "logo": "assets/movies/madmax.jpg"
         },
         {
             "title": "The Dark Knight",
@@ -23,7 +24,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "9.0",
             "language": "English",
             "awards": ["Best Supporting Actor"],
-            "rated": "PG-13"
+            "rated": "PG-13",
+            "logo": "assets/movies/batman.jpg"
         },
         {
             "title": "Die Hard",
@@ -35,7 +37,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "8.2",
             "language": "English",
             "awards": [],
-            "rated": "R"
+            "rated": "R",
+            "logo": "assets/movies/diehard.jpg"
         },
         {
             "title": "Kill Bill: Vol. 1",
@@ -47,7 +50,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "8.1",
             "language": "English",
             "awards": [],
-            "rated": "R"
+            "rated": "R",
+            "logo": "assets/movies/kill.jpg"
         },
         {
             "title": "Gladiator",
@@ -59,7 +63,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "8.5",
             "language": "English",
             "awards": ["Best Picture", "Best Actor"],
-            "rated": "R"
+            "rated": "R",
+            "logo": "assets/movies/gladiator.jpg"
         },
         {
             "title": "John Wick",
@@ -71,7 +76,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "7.4",
             "language": "English",
             "awards": [],
-            "rated": "R"
+            "rated": "R",
+            "logo": "assets/movies/wick.jpg"
         },
         {
             "title": "Inception",
@@ -83,7 +89,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "8.8",
             "language": "English",
             "awards": ["Best Cinematography", "Best Visual Effects"],
-            "rated": "PG-13"
+            "rated": "PG-13",
+            "logo": "assets/movies/inception.jpg"
         },
         {
             "title": "The Matrix",
@@ -95,7 +102,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "8.7",
             "language": "English",
             "awards": ["Best Film Editing", "Best Sound", "Best Sound Effects Editing", "Best Visual Effects"],
-            "rated": "R"
+            "rated": "R",
+            "logo": "assets/movies/matrix.jpg"
         },
         {
             "title": "Léon: The Professional",
@@ -107,7 +115,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "8.5",
             "language": "English",
             "awards": [],
-            "rated": "R"
+            "rated": "R",
+            "logo": "assets/movies/professional.jpg"
         },
         {
             "title": "The Bourne Identity",
@@ -119,7 +128,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "7.9",
             "language": "English",
             "awards": [],
-            "rated": "PG-13"
+            "rated": "PG-13",
+            "logo": "assets/movies/bourne.jpg"
         },
         {
             "title": "Eternal Sunshine of the Spotless Mind",
@@ -131,7 +141,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "8.3",
             "language": "English",
             "awards": ["Best Original Screenplay"],
-            "rated": "R"
+            "rated": "R",
+            "logo": "assets/movies/eternalsunshine.jpg"
         },
         {
             "title": "La La Land",
@@ -143,7 +154,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "8.0",
             "language": "English",
             "awards": ["Best Director"],
-            "rated": "PG-13"
+            "rated": "PG-13",
+            "logo": "assets/movies/lalaland.jpg"
         },
         {
             "title": "Pride and Prejudice",
@@ -155,7 +167,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "7.8",
             "language": "English",
             "awards": ["Best Actress in a Leading Role"],
-            "rated": "PG-13"
+            "rated": "PG-13",
+            "logo": "assets/movies/pride.jpg"
         },
         {
             "title": "Brokeback Mountain",
@@ -167,7 +180,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "7.7",
             "language": "English",
             "awards": ["Best Director"],
-            "rated": "R"
+            "rated": "R",
+            "logo": "assets/movies/brokeback.jpg"
         },
         {
             "title": "The Shining",
@@ -179,7 +193,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "8.4",
             "language": "English",
             "awards": [],
-            "rated": "R"
+            "rated": "R",
+            "logo": "assets/movies/shining.jpg"
         },
         {
             "title": "Get Out",
@@ -191,7 +206,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "7.7",
             "language": "English",
             "awards": ["Best Original Screenplay"],
-            "rated": "R"
+            "rated": "R",
+            "logo": "assets/movies/getout.jpg"
         },
         {
             "title": "Hereditary",
@@ -203,7 +219,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "7.7",
             "language": "English",
             "awards": [],
-            "rated": "R"
+            "rated": "R",
+            "logo": "assets/movies/hereditary.jpg"
         },
         {
             "title": "A Nightmare on Elm Street",
@@ -215,7 +232,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "7.5",
             "language": "English",
             "awards": [],
-            "rated": "R"
+            "rated": "R",
+            "logo": "assets/movies/elm.jpg"
         },
         {
             "title": "The Exorcist",
@@ -227,7 +245,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "8.0",
             "language": "English",
             "awards": ["Best Adapted Screenplay", "Best Sound Mixing"],
-            "rated": "R"
+            "rated": "R",
+            "logo": "assets/movies/exorcist.jpg"
         },
         {
             "title": "Psycho",
@@ -239,7 +258,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "8.5",
             "language": "English",
             "awards": [],
-            "rated": "R"
+            "rated": "R",
+            "logo": "assets/movies/psycho.jpg"
         },
         {
             "title": "It",
@@ -251,7 +271,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "7.3",
             "language": "English",
             "awards": [],
-            "rated": "R"
+            "rated": "R",
+            "logo": "assets/movies/it.jpg"
         },
         {
             "title": "Saw",
@@ -263,7 +284,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "7.6",
             "language": "English",
             "awards": [],
-            "rated": "R"
+            "rated": "R",
+            "logo": "assets/movies/saw.jpg"
         },
         {
             "title": "The Conjuring",
@@ -275,7 +297,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "7.5",
             "language": "English",
             "awards": [],
-            "rated": "R"
+            "rated": "R",
+            "logo": "assets/movies/conjuring.jpg"
         },
         {
             "title": "Halloween",
@@ -287,7 +310,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "7.8",
             "language": "English",
             "awards": [],
-            "rated": "R"
+            "rated": "R",
+            "logo": "assets/movies/halloween.jpg"
         },
         {
             "title": "Toy Story",
@@ -299,7 +323,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "8.3",
             "language": "English",
             "awards": ["Special Achievement Award"],
-            "rated": "G"
+            "rated": "G",
+            "logo": "assets/movies/toy.jpg"
         },
         {
             "title": "Frozen",
@@ -311,7 +336,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "7.4",
             "language": "English",
             "awards": ["Best Animated Feature"],
-            "rated": "PG"
+            "rated": "PG",
+            "logo": "assets/movies/frozen.jpg"
         },
         {
             "title": "The Lion King",
@@ -323,7 +349,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "8.5",
             "language": "English",
             "awards": ["Best Original Score"],
-            "rated": "G"
+            "rated": "G",
+            "logo": "assets/movies/lionking.jpg"
         },
         {
             "title": "Finding Nemo",
@@ -335,7 +362,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "8.1",
             "language": "English",
             "awards": ["Best Animated Feature"],
-            "rated": "G"
+            "rated": "G",
+            "logo": "assets/movies/nemo.jpg"
         },
         {
             "title": "Moana",
@@ -347,7 +375,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "7.6",
             "language": "English",
             "awards": [],
-            "rated": "PG"
+            "rated": "PG",
+            "logo": "assets/movies/moana.jpg"
         },
         {
             "title": "Zootopia",
@@ -359,7 +388,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "8.0",
             "language": "English",
             "awards": ["Best Animated Feature"],
-            "rated": "PG"
+            "rated": "PG",
+            "logo": "assets/movies/zootopia.jpg"
         },
         {
             "title": "Despicable Me",
@@ -371,7 +401,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "7.6",
             "language": "English",
             "awards": [],
-            "rated": "PG"
+            "rated": "PG",
+            "logo": "assets/movies/despicable.jpg"
         },
         {
             "title": "Coco",
@@ -383,7 +414,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "8.4",
             "language": "English",
             "awards": ["Best Animated Feature"],
-            "rated": "PG"
+            "rated": "PG",
+            "logo": "assets/movies/coco.jpg"
         },
         {
             "title": "Shrek",
@@ -395,7 +427,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "7.8",
             "language": "English",
             "awards": ["Best Animated Feature"],
-            "rated": "PG"
+            "rated": "PG",
+            "logo": "assets/movies/shrek.jpg"
         },
         {
             "title": "Paddington",
@@ -407,7 +440,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "scores": "7.2",
             "language": "English",
             "awards": [],
-            "rated": "PG"
+            "rated": "PG",
+            "logo": "assets/movies/paddington.jpg"
         }
     ]
 
@@ -770,8 +804,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Get references to the modal and the close button
-    const modal = document.getElementById("myModal");
-    const closeModal = document.getElementById("closeModal");
+    // const modal = document.getElementById("myModal");
+    // const closeModal = document.getElementById("closeModal");
 
     // // Get a reference to the button that should open the modal
     // const openModalButton = document.getElementById("startBtn"); // Replace "buttonID" with the actual ID of your button
@@ -782,17 +816,17 @@ document.addEventListener("DOMContentLoaded", function() {
     //     modal.style.display = "block";
     // });
 
-    // Close the modal when the close button is clicked
-    closeModal.addEventListener("click", function() {
-        modal.style.display = "none";
-    });
+    // // Close the modal when the close button is clicked
+    // closeModal.addEventListener("click", function() {
+    //     modal.style.display = "none";
+    // });
 
-    // Close the modal when the overlay (outside the modal) is clicked
-    window.addEventListener("click", function(event) {
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
-    });
+    // // Close the modal when the overlay (outside the modal) is clicked
+    // window.addEventListener("click", function(event) {
+    //     if (event.target === modal) {
+    //         modal.style.display = "none";
+    //     }
+    // });
 
     const clearButton = document.getElementById("clearBtn");
 
@@ -950,75 +984,105 @@ document.addEventListener("DOMContentLoaded", function() {
                 awardMatch && ratedMatch && scoreMatch;
         });
         console.log(filteredMovies)
-        
-        // Display the filtered movies in the modal
-        const modalContent = document.querySelector(".modal-content");
-        const movieListContainer = modalContent.querySelector(".movie-list-container");
-        // Clear any previous movie list content
-        movieListContainer.innerHTML = '';
 
-        if (filteredMovies.length > 0) {
-            filteredMovies.forEach((movie, index) => {
-                const movieDetails = document.createElement("div");
-                movieDetails.classList.add("movie-details");
-        
-                const titleElement = document.createElement("div");
-                titleElement.innerHTML = '<span class="bold-text">Title:</span> ' + movie.title;
-                movieDetails.appendChild(titleElement);
-        
-                const genreElement = document.createElement("div");
-                genreElement.innerHTML = '<span class="bold-text">Genre:</span> ' + movie.genre.join(", ");
-                movieDetails.appendChild(genreElement);
+        const movieList = document.getElementById("movieList");
+        movieList.innerHTML = '';
 
-                const dateElement = document.createElement("div");
-                dateElement.innerHTML = '<span class="bold-text">Year released:</span> ' + movie.date;
-                movieDetails.appendChild(dateElement);
-
-                const actorsElement = document.createElement("div");
-                actorsElement.innerHTML = '<span class="bold-text">Actors:</span> ' + movie.actors.join(", ");
-                movieDetails.appendChild(actorsElement);
-
-                const popularityElement = document.createElement("div");
-                popularityElement.innerHTML = '<span class="bold-text">Popularity:</span> ' + movie.popularity;
-                movieDetails.appendChild(popularityElement);
-
-                const durationElement = document.createElement("div");
-                durationElement.innerHTML = '<span class="bold-text">Duration:</span> ' + movie.duration + ' minutes';
-                movieDetails.appendChild(durationElement);
-
-                const scoresElement = document.createElement("div");
-                scoresElement.innerHTML = '<span class="bold-text">Audience score:</span> ' + movie.scores;
-                movieDetails.appendChild(scoresElement);
-
-                const languageElement = document.createElement("div");
-                languageElement.innerHTML = '<span class="bold-text">Language:</span> ' + movie.language;
-                movieDetails.appendChild(languageElement);
-
-                const awardsElement = document.createElement("div");
-                awardsElement.innerHTML = movie.awards.length > 0 ? '<span class="bold-text">Awards:</span> ' + movie.awards.join(", ") : '<span class="bold-text">Awards:</span> <span class="italic-text">None</span>';
-                movieDetails.appendChild(awardsElement);
-
-                const rateElement = document.createElement("div");
-                rateElement.innerHTML = '<span class="bold-text">Rate:</span> ' + movie.rated;
-                movieDetails.appendChild(rateElement);
-        
-                movieListContainer.appendChild(movieDetails);
-        
-                // Add a horizontal line or spacing after each group of movies
-                if (index < filteredMovies.length - 1) {
-                    const spacer = document.createElement("hr"); // You can use hr or other elements for spacing
-                    movieListContainer.appendChild(spacer);
-                }
+        if (filteredMovies.length === 0) {
+            // If no results found, display a message
+            const noResultMessage = document.createElement("div");
+            noResultMessage.className = "col-12 text-center";
+            noResultMessage.textContent = "No results found.";
+    
+            movieList.appendChild(noResultMessage);
+        }else{
+            filteredMovies.forEach(movie => {
+                const movieElement = document.createElement("div");
+                movieElement.className = "col-md-2";
+                // movieElement.className = "movie";
+    
+                movieElement.innerHTML = `
+                <img src="${movie.logo}" alt="${movie.title} Logo style="height: 150px; width: 100px; margin-bottom: 10px border-radius: 3px" class="img-fluid">
+                <div class="movie-title" style="font-weight: bold;">${movie.title}</div>
+                <div class="movie-info">${movie.genre.join(', ')} | ${movie.date}</div>
+                <div class="movie-info">${movie.duration} min | ${movie.rated}</div>
+                <div class="movie-scores">${movie.scores}</div>
+                `;
+    
+                movieList.appendChild(movieElement);
             });
-        } else {
-            // Handle the case when no matching movies are found
-            const noMatchElement = document.createElement("p");
-            noMatchElement.textContent = "No matching movies found.";
-            movieListContainer.appendChild(noMatchElement);
         }
 
-        // Show the modal
-        modal.style.display = "block";
+        
+
+        // // Display the filtered movies in the modal
+        // const modalContent = document.querySelector(".modal-content");
+        // const movieListContainer = modalContent.querySelector(".movie-list-container");
+        // // Clear any previous movie list content
+        // movieListContainer.innerHTML = '';
+
+        // if (filteredMovies.length > 0) {
+        //     filteredMovies.forEach((movie, index) => {
+        //         const movieDetails = document.createElement("div");
+        //         movieDetails.classList.add("movie-details");
+        
+        //         const titleElement = document.createElement("div");
+        //         titleElement.innerHTML = '<span class="bold-text">Title:</span> ' + movie.title;
+        //         movieDetails.appendChild(titleElement);
+        
+        //         const genreElement = document.createElement("div");
+        //         genreElement.innerHTML = '<span class="bold-text">Genre:</span> ' + movie.genre.join(", ");
+        //         movieDetails.appendChild(genreElement);
+
+        //         const dateElement = document.createElement("div");
+        //         dateElement.innerHTML = '<span class="bold-text">Year released:</span> ' + movie.date;
+        //         movieDetails.appendChild(dateElement);
+
+        //         const actorsElement = document.createElement("div");
+        //         actorsElement.innerHTML = '<span class="bold-text">Actors:</span> ' + movie.actors.join(", ");
+        //         movieDetails.appendChild(actorsElement);
+
+        //         const popularityElement = document.createElement("div");
+        //         popularityElement.innerHTML = '<span class="bold-text">Popularity:</span> ' + movie.popularity;
+        //         movieDetails.appendChild(popularityElement);
+
+        //         const durationElement = document.createElement("div");
+        //         durationElement.innerHTML = '<span class="bold-text">Duration:</span> ' + movie.duration + ' minutes';
+        //         movieDetails.appendChild(durationElement);
+
+        //         const scoresElement = document.createElement("div");
+        //         scoresElement.innerHTML = '<span class="bold-text">Audience score:</span> ' + movie.scores;
+        //         movieDetails.appendChild(scoresElement);
+
+        //         const languageElement = document.createElement("div");
+        //         languageElement.innerHTML = '<span class="bold-text">Language:</span> ' + movie.language;
+        //         movieDetails.appendChild(languageElement);
+
+        //         const awardsElement = document.createElement("div");
+        //         awardsElement.innerHTML = movie.awards.length > 0 ? '<span class="bold-text">Awards:</span> ' + movie.awards.join(", ") : '<span class="bold-text">Awards:</span> <span class="italic-text">None</span>';
+        //         movieDetails.appendChild(awardsElement);
+
+        //         const rateElement = document.createElement("div");
+        //         rateElement.innerHTML = '<span class="bold-text">Rate:</span> ' + movie.rated;
+        //         movieDetails.appendChild(rateElement);
+        
+        //         movieListContainer.appendChild(movieDetails);
+        
+        //         // Add a horizontal line or spacing after each group of movies
+        //         if (index < filteredMovies.length - 1) {
+        //             const spacer = document.createElement("hr"); // You can use hr or other elements for spacing
+        //             movieListContainer.appendChild(spacer);
+        //         }
+        //     });
+        // } else {
+        //     // Handle the case when no matching movies are found
+        //     const noMatchElement = document.createElement("p");
+        //     noMatchElement.textContent = "No matching movies found.";
+        //     movieListContainer.appendChild(noMatchElement);
+        // }
+
+        // // Show the modal
+        // modal.style.display = "block";
     });
 
     // ACTORS
