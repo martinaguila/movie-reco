@@ -7,42 +7,45 @@
     <link rel="stylesheet" href="style.css">
     <title>Movie Recommendation</title>
 </head>
-<body>
-    
-    <!-- Modal -->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close" id="closeModal">&times;</span>
-            <h2>Recommended Movie</h2>
-            <div class="movie-list-container">
-                <!-- This is where the list of movies will be displayed -->
-            </div>
-        </div>
-    </div>
 
-    <div class="container">
-        <h1 style="text-align: center;">Movie Recommendation</h1>
-        <div class="row">
-            <div class="col-md-6">
+<body>
+    <div class="title">
+        <h2>Movie Recommendation</h2>
+    </div>
+    <div class="row">
+        <div class="column1">
+            <div class="content">
                 <!-- GENRE -->
                 <div class="p-3">
-                    <label for="genre">Select genres:</label>
-                    <select id="genre" name="genre" multiple>
-                    </select>
-                
-                    <img class="dd-icon" src="assets/arrow-down.png" id="showGenreOptions">
-                    <button 
-                        class="btn btn-primary" 
-                        id="showSelectedGenres">Select Genres
-                    </button>
-                    
-                    <div id="selectedGenresList" class="lists"></div>
+                    <div class="row no-bg">
+                        <div class="col-md-6 align-left">
+                            <label for="genre">Select genres:</label>
+                        </div>
+                        <div class="col-md-6 align-right">
+                            <select id="genre" name="genre" multiple>
+                            </select>
+                        
+                            <img class="dd-icon" src="assets/arrow-down2.png" id="showGenreOptions">
+                            <button 
+                                class="btn btn-primary" 
+                                id="showSelectedGenres">Select Genres
+                            </button>
+                            
+                            <div id="selectedGenresList" class="lists"></div>
+                        </div>
+                    </div>
                 </div>
                 <!-- RELEASED DATE -->
                 <div class="p-3">
-                    <label for="releasedYear">Select released year:</label>
-                    <select id="releasedYear" name="releasedYear">
-                    </select>
+                    <div class="row no-bg">
+                        <div class="col-md-6 align-left">
+                            <label for="releasedYear">Select released year:</label>
+                        </div>
+                        <div class="col-md-6 align-right">
+                            <select id="releasedYear" name="releasedYear">
+                            </select>
+                        </div>
+                    </div>
                 </div>
                 <!-- DIRECTOR -->
                 <!-- <div class="p-3">
@@ -52,81 +55,119 @@
                 </div> -->
                 <!-- ACTOR -->
                 <div class="p-3">
-                    <label for="actor">Select actors:</label>
-                    <select id="actor" name="actor" multiple>
-                    </select>
-                
-                    <img class="dd-icon" src="assets/arrow-down.png" id="showActorsOptions">
-                    <button 
-                        class="btn btn-primary" 
-                        id="showSelectedActors">Select Actors
-                    </button>
-                    
-                    <div id="selectedActorsList" class="lists"></div>
+                    <div class="row no-bg">
+                        <div class="col-md-6 align-left">
+                        <label for="actor">Select actors:</label>
+                        </div>
+                        <div class="col-md-6 align-right">
+                            <select id="actor" name="actor" multiple>
+                            </select>
+                            <img class="dd-icon" src="assets/arrow-down2.png" id="showActorsOptions">
+                            <button 
+                                class="btn btn-primary" 
+                                id="showSelectedActors">Select Actors
+                            </button>
+                            
+                            <div id="selectedActorsList" class="lists"></div>
+                        </div>
+                    </div>
                 </div>
                 <!-- POPULARITY -->
                 <div class="p-3">
-                    <label for="popularity">Select popularity:</label>
-                    <select id="popularity" name="popularity">
-                    </select>
+                    <div class="row no-bg">
+                        <div class="col-md-6 align-left">
+                            <label for="popularity">Select popularity:</label>
+                        </div>
+                        <div class="col-md-6 align-right">
+                            <select id="popularity" name="popularity">
+                            </select>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6">
                 <!-- DURATION -->
                 <div class="p-3">
-                    <label for="duration">Select duration(mins):</label>
-                    <select id="duration" name="duration">
-                    </select>
+                    <div class="row no-bg">
+                        <div class="col-md-6 align-left">
+                            <label for="duration">Select duration(mins):</label>
+                        </div>
+                        <div class="col-md-6 align-right">
+                            <select id="duration" name="duration">
+                            </select>
+                        </div>
+                    </div>
                 </div>
                 <!-- REVIEWS -->
                 <div class="p-3">
-                    <label for="review">Select review scores:</label>
-                    <select id="review" name="review">
-                    </select>
+                    <div class="row no-bg">
+                        <div class="col-md-6 align-left">
+                            <label for="review">Select review scores:</label>
+                        </div>
+                        <div class="col-md-6 align-right">
+                            <select id="review" name="review">
+                            </select>
+                        </div>
+                    </div>
                 </div>
                  <!-- LANGUAGE -->
                  <div class="p-3">
-                    <label for="language">Select language:</label>
-                    <select id="language" name="language">
-                    </select>
+                    <div class="row no-bg">
+                        <div class="col-md-6 align-left">
+                            <label for="language">Select language:</label>
+                        </div>
+                        <div class="col-md-6 align-right">
+                            <select id="language" name="language">
+                            </select>
+                        </div>
+                    </div>
                 </div>
                 <!-- Awards -->
                 <div class="p-3">
-                    <label for="award">Select awards:</label>
-                    <select id="award" name="award" multiple>
-                    </select>
-                
-                    <img class="dd-icon" src="assets/arrow-down.png" id="showAwardsOptions">
-                    <button 
-                        class="btn btn-primary" 
-                        id="showSelectedAwards">Select Awards
-                    </button>
-                    
-                    <div id="selectedAwardsList" class="lists"></div>
+                    <div class="row no-bg">
+                        <div class="col-md-6 align-left">
+                            <label for="award">Select awards:</label>
+                        </div>
+                        <div class="col-md-6 align-right">
+                            <select id="award" name="award" multiple>
+                            </select>
+                        
+                            <img class="dd-icon" src="assets/arrow-down2.png" id="showAwardsOptions">
+                            <button 
+                                class="btn btn-primary" 
+                                id="showSelectedAwards">Select Awards
+                            </button>
+                            
+                            <div id="selectedAwardsList" class="lists"></div>
+                        </div>
+                    </div>
                 </div>
                 <!-- RATED SYSTEM -->
                 <div class="p-3">
-                    <label for="rated">Select rated system:</label>
-                    <select id="rated" name="rated">
-                    </select>
+                    <div class="row no-bg">
+                        <div class="col-md-6 align-left">
+                            <label for="rated">Select rated system:</label>
+                        </div>
+                        <div class="col-md-6 align-right">
+                            <select id="rated" name="rated">
+                            </select>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="button-container">
+                <button type="button" class="btn start" id="startBtn">START</button>
+                <button type="button" class="btn clear" id="clearBtn">CLEAR ALL</button>
+            </div>
         </div>
-
-        <div class="button-container">
-            <button type="button" class="btn clear" id="clearBtn">CLEAR ALL</button>
-            <button type="button" class="btn start" id="startBtn">START</button>
+        <div class="column2">
+            <div class="content">
+                <div class="row" id="movieList"></div>
+            </div>
         </div>
-        
     </div>
 
-<footer>
-    <!-- <p>&copy; 2023 Movie Recommendation</p> -->
-</footer>
+    <script src="script.js"></script>
 
-<script src="script.js"></script>
-
-<div id="darkOverlay" class="overlay"></div>
+    <div id="darkOverlay" class="overlay"></div>
 
 </body>
 </html>
