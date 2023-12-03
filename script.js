@@ -1009,6 +1009,22 @@ document.addEventListener("DOMContentLoaded", function() {
                 <div class="movie-scores">${movie.scores}</div>
                 `;
     
+                const logoElement = movieElement.querySelector("img");
+
+                // Add event listeners for hover and click
+                logoElement.addEventListener("mouseover", () => {
+                    logoElement.classList.add("hovered");
+                });
+
+                logoElement.addEventListener("mouseout", () => {
+                    logoElement.classList.remove("hovered");
+                });
+
+                // Add event listener to the logo
+                logoElement.addEventListener("click", () => {
+                    displayModal(movie);
+                });
+
                 movieList.appendChild(movieElement);
             });
         }
@@ -1084,6 +1100,37 @@ document.addEventListener("DOMContentLoaded", function() {
         // // Show the modal
         // modal.style.display = "block";
     });
+
+    function displayModal(movie) {
+        // Create modal container
+        const modalContainer = document.createElement("div");
+        modalContainer.className = "modal-container";
+    
+        // Create close icon
+        const closeIcon = document.createElement("div");
+        closeIcon.className = "close-icon2";
+        closeIcon.innerHTML = "&times;";
+    
+        // Create modal content
+        const modalContent = document.createElement("div");
+        modalContent.className = "modal-content";
+        modalContent.innerHTML = `
+            <img src="${movie.logo}" alt="${movie.title} Logo" class="modal-logo">
+        `;
+    
+        // Append close icon and modal content to the modal container
+        modalContainer.appendChild(closeIcon);
+        modalContainer.appendChild(modalContent);
+    
+        // Append modal container to the body
+        document.body.appendChild(modalContainer);
+    
+        // Add event listener to close icon to close the modal
+        closeIcon.addEventListener("click", () => {
+            document.body.removeChild(modalContainer);
+        });
+    }
+    
 
     // ACTORS
     // // Create an empty array to store unique actors
